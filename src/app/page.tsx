@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ModeToggle } from "@/components/ui/mode-toggle";
+import NavigationBar from "@/components/ui/navigation-bar";
 import React from "react";
 
 // Structure of Home Page
@@ -15,7 +16,7 @@ function HomePage() {
   return (
     <>
       {/* Navigation Bar */}
-      <p>Navigation Bar</p>
+      <NavigationBar />
 
       {/* Call-to-Action for New Visitors */}
       <p>Call-to-Action for New Visitors</p>
