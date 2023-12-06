@@ -1,20 +1,38 @@
-import { Button } from '@/components/ui/button'
-import { ModeToggle } from '@/components/ui/mode-toggle'
-import React from 'react'
+import { Button } from "@/components/ui/button";
+import { ModeToggle } from "@/components/ui/mode-toggle";
+import React from "react";
 
-function Home() {
+// Structure of Home Page
+// Homepage:
+
+// Featured Blog Posts
+// Recent Blog Posts
+// Categories/Topics
+// Search Bar
+// Call-to-Action for New Visitors
+
+function HomePage() {
   return (
-    <div>
-     Some Content
+    <>
+      {/* Navigation Bar */}
+      <p>Navigation Bar</p>
 
-     <Button variant="default">Simple Button</Button>
+      {/* Call-to-Action for New Visitors */}
+      <p>Call-to-Action for New Visitors</p>
 
-     <Button variant="outline">Outline Button</Button>
+      {/* Search Bar */}
+      <p>Search Bar</p>
 
-     {/* Dark Mode */}
-     <ModeToggle/>
-    </div>
-  )
+      {/* Featured Blog Posts */}
+      <p>Featured Blog Posts</p>
+
+      {/* Categories/ Topics */}
+      <p>Categories/ Topics</p>
+
+      {/* Recent Blog Posts */}
+      <p>Recent Blog Posts</p>
+    </>
+  );
 }
 
-export default Home
+export default HomePage;
