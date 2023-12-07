@@ -10,6 +10,8 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import Image from "next/image";
+import logo from "/public/infinite-blogs-logos/infinite-blogs.jpeg";
 
 // Structure of Navigation bar
 // Navigation:
@@ -25,11 +27,7 @@ function NavigationBar() {
       {/* Logo */}
       <div className="font-serif border">
         <div className="w-10 mx-2">
-          <img
-            src="/infinite-blogs-logos/infinite-blogs.jpeg"
-            alt="InfiniteBlogs logo"
-            className="rounded-lg"
-          />
+          <Image src={logo} alt="InfiniteBlogs logo" className="rounded-lg" />
         </div>
       </div>
       {/* List of navigation buttons */}
