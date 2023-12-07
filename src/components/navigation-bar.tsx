@@ -64,7 +64,7 @@ const NavigationBar = () => {
         </DropdownMenu>
       </div>
 
-      <div className="w-max flex justify-end gap-8">
+      <div className="w-max flex justify-end gap-8 m-auto">
         {/* Search Bar */}
         <Input placeholder="Search..." type="text" className="w-60" />
 
@@ -81,7 +81,7 @@ const NavigationBar = () => {
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
         ) : (
-          <div className="flex gap-3">
+          <div className="flex gap-3 m-auto">
             <Link href={"/register"}>
               <Button>Create Account</Button>
             </Link>
