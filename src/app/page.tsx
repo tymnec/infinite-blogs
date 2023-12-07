@@ -1,3 +1,4 @@
+import { ModeToggle } from "@/components/ui/mode-toggle";
 import NavigationBar from "@/components/ui/navigation-bar";
 import React from "react";
 
@@ -30,6 +31,11 @@ function HomePage() {
 
       {/* Recent Blog Posts */}
       <p>Recent Blog Posts</p>
+
+      {/* Dark Mode */}
+      <div className="fixed bottom-5 right-5">
+        <ModeToggle />
+      </div>
     </>
   );
 }

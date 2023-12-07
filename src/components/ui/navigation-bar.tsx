@@ -25,9 +25,13 @@ function NavigationBar() {
   return (
     <div className="flex w-full p-3">
       {/* Logo */}
-      <div className="font-serif border">
+      <div className="font-serif">
         <div className="w-10 mx-2">
-          <Image src={logo} alt="InfiniteBlogs logo" className="rounded-lg" />
+          <Image
+            src={logo}
+            alt="InfiniteBlogs logo"
+            className="rounded-lg shadow-lg"
+          />
         </div>
       </div>
       {/* List of navigation buttons */}
