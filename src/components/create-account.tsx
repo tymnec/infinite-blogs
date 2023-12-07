@@ -25,6 +25,7 @@ import {
 import { Alert, AlertDescription, AlertTitle } from "./ui/alert";
 import { GoogleAuthProvider } from "firebase/auth";
 import { signInWithRedirect } from "firebase/auth";
+import Link from "next/link";
 
 export function CreateAccount() {
   const [email, setEmail] = useState("");
@@ -146,6 +147,16 @@ export function CreateAccount() {
 
   return (
     <>
+      {/* Back Button */}
+      <div className="fixed top-5 left-5">
+        <Link href={"/"}>
+          <Button variant="outline" className="mb-4">
+            Back
+          </Button>{" "}
+        </Link>
+      </div>
+
+      {/* Main Card */}
       <Card>
         <CardHeader className="space-y-1">
           <CardTitle className="text-2xl">Create an account</CardTitle>
