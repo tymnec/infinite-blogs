@@ -3,6 +3,7 @@ import NavigationBar from "@/components/navigation-bar";
 import React from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import Categories from "@/components/categories";
 
 // Structure of Home Page
 // Homepage:
@@ -15,7 +16,7 @@ import { Button } from "@/components/ui/button";
 
 function HomePage() {
   return (
-    <>
+    <div>
       {/* Navigation Bar */}
       <NavigationBar />
 
@@ -29,7 +30,9 @@ function HomePage() {
       <p>Featured Blog Posts</p>
 
       {/* Categories/ Topics */}
-      <p>Categories/ Topics</p>
+      <div className="w-max mx-auto border">
+        <Categories />
+      </div>
 
       {/* Recent Blog Posts */}
       <p>Recent Blog Posts</p>
@@ -42,7 +45,7 @@ function HomePage() {
       <Link href={"/register"}>
         <Button>Create Account</Button>
       </Link>
-    </>
+    </div>
   );
 }
 
