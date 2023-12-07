@@ -16,7 +16,7 @@ function About() {
         <p className="text-lg mb-4">
           Feel free to explore our site and learn more about what we do and the
           work we do. If you have any questions or would like to get in touch,
-          don't hesitate to contact us.
+          don&apos;t hesitate to contact us.
         </p>
         <p className="text-lg mb-4">Thank you for visiting our website!</p>
       </div>
