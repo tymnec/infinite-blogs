@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
@@ -13,6 +15,7 @@ import {
 import Image from "next/image";
 import logo from "/public/infinite-blogs-logos/infinite-blogs.jpeg";
 import Link from "next/link";
+import { auth } from "@/app/firebase";
 
 // Structure of Navigation bar
 // Navigation:
@@ -22,7 +25,7 @@ import Link from "next/link";
 // About Us
 // Contact
 
-function NavigationBar() {
+const NavigationBar = () => {
   return (
     <div className="flex w-full p-3">
       {/* Logo */}
@@ -61,17 +64,35 @@ function NavigationBar() {
         </DropdownMenu>
       </div>
 
-      <div className="w-96 flex justify-end gap-8">
+      <div className="w-max flex justify-end gap-8">
         {/* Search Bar */}
-        <Input placeholder="Search..." type="text" />
-        {/* Profile Settings */}
-        <Avatar>
-          <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
-          <AvatarFallback>CN</AvatarFallback>
-        </Avatar>
+        <Input placeholder="Search..." type="text" className="w-60" />
+
+        {auth.currentUser ? (
+          <Avatar onClick={() => auth.signOut()} className="cursor-pointer">
+            <AvatarImage
+              src={
+                auth.currentUser.photoURL
+                  ? auth.currentUser.photoURL
+                  : "https://github.com/shadcn.png"
+              }
+              alt="@shadcn"
+            />
+            <AvatarFallback>CN</AvatarFallback>
+          </Avatar>
+        ) : (
+          <div className="flex gap-3">
+            <Link href={"/register"}>
+              <Button>Create Account</Button>
+            </Link>
+            <Link href={"/login"}>
+              <Button>Login</Button>
+            </Link>
+          </div>
+        )}
       </div>
     </div>
   );
-}
+};
 
 export default NavigationBar;
