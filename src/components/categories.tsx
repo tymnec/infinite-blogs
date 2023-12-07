@@ -20,10 +20,7 @@ function Categories() {
       <div className="flex flex-wrap gap-4">
         {/* Category Item */}
         {categories.map((category) => (
-          <div
-            className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 p-2"
-            key={category.id}
-          >
+          <div className="w-72 p-2" key={category.id}>
             <Card>
               <CardHeader>
                 <Image
@@ -44,7 +41,7 @@ function Categories() {
           </div>
         ))}
 
-        <div className="align-center m-auto text-stone-100 text-sm">
+        <div className="align-center m-auto dark:text-stone-100 text-stone-800 text-sm">
           More Comming ...
         </div>
       </div>

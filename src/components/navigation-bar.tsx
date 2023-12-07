@@ -27,10 +27,10 @@ import { auth } from "@/app/firebase";
 
 const NavigationBar = () => {
   return (
-    <div className="flex w-11/12 p-6 border my-3 mx-auto rounded-3xl shadow-lg">
+    <div className="flex w-full p-6 border my-3 mx-auto rounded-3xl shadow-lg">
       {/* Logo */}
       <div className="font-serif">
-        <div className="w-11 mx-2">
+        <div className="w-11 ml-2 mr-5">
           <Image
             src={logo}
             alt="InfiniteBlogs logo"

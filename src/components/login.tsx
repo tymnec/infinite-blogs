@@ -104,8 +104,6 @@ export function LoginInAccount() {
           title: "Success!",
           description: "Logged In Successfully",
         });
-
-        console.log(auth.currentUser);
       });
     } catch (error) {
       if (error instanceof Error) {

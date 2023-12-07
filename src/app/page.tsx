@@ -4,6 +4,8 @@ import React from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Categories from "@/components/categories";
+import Hero from "@/components/hero";
+import Footer from "@/components/footer";
 
 // Structure of Home Page
 // Homepage:
@@ -16,35 +18,25 @@ import Categories from "@/components/categories";
 
 function HomePage() {
   return (
-    <div>
+    <div className="container">
       {/* Navigation Bar */}
       <NavigationBar />
 
-      {/* Call-to-Action for New Visitors */}
-      <p>Call-to-Action for New Visitors</p>
-
-      {/* Search Bar */}
-      <p>Search Bar</p>
-
-      {/* Featured Blog Posts */}
-      <p>Featured Blog Posts</p>
+      {/* Hero Section */}
+      <Hero />
 
       {/* Categories/ Topics */}
-      <div className="w-max mx-auto border">
+      <div className="w-max mt-10">
         <Categories />
       </div>
-
-      {/* Recent Blog Posts */}
-      <p>Recent Blog Posts</p>
 
       {/* Dark Mode */}
       <div className="fixed bottom-5 right-5">
         <ModeToggle />
       </div>
 
-      <Link href={"/register"}>
-        <Button>Create Account</Button>
-      </Link>
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }
