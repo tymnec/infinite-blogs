@@ -56,10 +56,10 @@ const NavigationBar = () => {
           <DropdownMenuContent>
             <DropdownMenuLabel>Categories</DropdownMenuLabel>
             <DropdownMenuSeparator />
-            <DropdownMenuItem>First Category</DropdownMenuItem>
-            <DropdownMenuItem>Second Category</DropdownMenuItem>
-            <DropdownMenuItem>Third Category</DropdownMenuItem>
-            <DropdownMenuItem>Subscription</DropdownMenuItem>
+            <DropdownMenuItem>Technology and Innovation</DropdownMenuItem>
+            <DropdownMenuItem>Health and Wellness</DropdownMenuItem>
+            <DropdownMenuItem>Travel and Adventure</DropdownMenuItem>
+            <DropdownMenuItem>Personal Development</DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
       </div>
