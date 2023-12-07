@@ -35,6 +35,15 @@ function HomePage() {
         <ModeToggle />
       </div>
 
+      {/* Button for post */}
+      <div>
+        <Link href={"/add-post"}>
+          <Button>Post</Button>
+        </Link>
+      </div>
+
+      <br />
+
       {/* Footer */}
       <Footer />
     </div>
