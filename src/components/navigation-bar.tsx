@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import Image from "next/image";
 import logo from "/public/infinite-blogs-logos/infinite-blogs.jpeg";
+import Link from "next/link";
 
 // Structure of Navigation bar
 // Navigation:
@@ -36,9 +37,15 @@ function NavigationBar() {
       </div>
       {/* List of navigation buttons */}
       <div className="flex w-full justify-start gap-2 p-1">
-        <Button variant={"default"}>Home</Button>
-        <Button variant={"ghost"}>About</Button>
-        <Button variant={"ghost"}>Contact</Button>
+        <Link href={"/"}>
+          <Button variant={"default"}>Home</Button>
+        </Link>
+        <Link href={"/about"}>
+          <Button variant={"ghost"}>About</Button>
+        </Link>
+        <Link href={"/contact"}>
+          <Button variant={"ghost"}>Contact</Button>
+        </Link>
         <DropdownMenu>
           <DropdownMenuTrigger>
             <Button variant={"secondary"}>Categories</Button>
