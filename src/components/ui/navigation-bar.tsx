@@ -23,8 +23,14 @@ function NavigationBar() {
   return (
     <div className="flex w-full p-3">
       {/* Logo */}
-      <div className="p-1 font-serif border border-red-600 mx-2">
-        <p>Logo</p>
+      <div className="font-serif border">
+        <div className="w-10 mx-2">
+          <img
+            src="/infinite-blogs-logos/infinite-blogs.jpeg"
+            alt="InfiniteBlogs logo"
+            className="rounded-lg"
+          />
+        </div>
       </div>
       {/* List of navigation buttons */}
       <div className="flex w-full justify-start gap-2 p-1">
@@ -33,7 +39,7 @@ function NavigationBar() {
         <Button variant={"ghost"}>Contact</Button>
         <DropdownMenu>
           <DropdownMenuTrigger>
-            <Button variant={"ghost"}>Categories</Button>
+            <Button variant={"secondary"}>Categories</Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent>
             <DropdownMenuLabel>Categories</DropdownMenuLabel>
