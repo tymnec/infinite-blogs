@@ -1,6 +1,8 @@
 import { ModeToggle } from "@/components/ui/mode-toggle";
-import NavigationBar from "@/components/ui/navigation-bar";
+import NavigationBar from "@/components/navigation-bar";
 import React from "react";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 // Structure of Home Page
 // Homepage:
@@ -36,6 +38,10 @@ function HomePage() {
       <div className="fixed bottom-5 right-5">
         <ModeToggle />
       </div>
+
+      <Link href={"/register"}>
+        <Button>Create Account</Button>
+      </Link>
     </>
   );
 }

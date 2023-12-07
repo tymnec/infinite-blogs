@@ -1,7 +1,7 @@
 import React from "react";
-import { Button } from "./button";
-import { Input } from "./input";
-import { Avatar, AvatarFallback, AvatarImage } from "./avatar";
+import { Button } from "./ui/button";
+import { Input } from "./ui/input";
+import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import {
   DropdownMenu,
   DropdownMenuContent,
